@@ -258,6 +258,26 @@ function findLongestWordLength(str) {
   return Math.max(...str.split(" ").map(word => word.length));
 }
 
+////////////////////////////////////////////////
+//REPEAT A STRING
+
+function repeatStringNumTimes(str, num) {
+  let repeatingString = "";
+  for ( let i = 0; i < num; i++) {
+    repeatingString += str;
+  }
+  return repeatingString;
+}
+repeatStringNumTimes("abc", 3);
+/////////////
+
+function repeatStringNumTimes(str, num) {
+  return num > 0 ? str + repeatStringNumTimes(str, num - 1) : '';
+}
+
+
+///////////////////////////////////////////////
+//
 
 
 
