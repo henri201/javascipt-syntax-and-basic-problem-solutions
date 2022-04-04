@@ -247,6 +247,17 @@ function reverseString(str) {
 reverseString("hello");
 
 
+////////////////////////////////////////////////////////////////////////////
+//////SLICE METHOD
+
+function truncateString(str, num) {
+  
+  return str.length > num ? str.slice(0, num) + '...' : str;
+}
+
+console.log(truncateString('Peter Piper picked a peck of pickled peppers', 11));
+
+
 ////////////////////////////////////////////////////////////////////
 
 //FIND THE LONGEST WORD IN A SENTENCE, LOG THE LENGTH
