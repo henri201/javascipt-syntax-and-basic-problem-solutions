@@ -191,7 +191,7 @@ while (rep <= 10) {
   console.log(`pointless string text ${rep}`);
   rep++; // RUNDS 1 TO 10 SAME TEXT
 }
-//////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
 
 let dice = Math.trunc(Math.random() * 6) + 1;
 //console.log(dice); // random number between 0 - 6
@@ -226,6 +226,18 @@ const calcAverage = function (arr) {
   return sum / arr.length;
 };
 console.log(calcAverage(totals));
+
+///////////////////////////////////////////    generate number >= myMin and <= myMax
+(myMin, myMax) => {
+  return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
+}
+/* 1)   Math.random() = 0.8244326990411024
+2)  (myMax - myMin + 1) = 10 - 1 + 1 -> 10
+3)  a * b = 8.244326990411024
+4)  c + myMin = 9.244326990411024
+5)  Math.floor(9.244326990411024) = 9 */
+
+
 ///////////////////////////////////////////////////////////////////////////
 ///REVERSING A STRING
 function reverseString(str) {
