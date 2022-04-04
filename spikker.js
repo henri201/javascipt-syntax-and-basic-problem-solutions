@@ -18,14 +18,15 @@ Math.floor(Math.random() * 6) + 1; //1 - 6
 function getRandomNum(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min); // finds random number between min max
 }
-date = new Date(); // CURRENT DATE
-forEach(); // PERFOMRS A FUCNTION FOR EACH ELEMENT IN AN ARRAY
-Map(); // PERFORMS  FUNCTION FOR EACH ELEMENT IN AN ARRAY, THEN STORES THE RETURNED VALUES IN A NEW ARRAY.
-Filter(); // returns the elements of an array that meets a condition  specified in a function
-reduce(); // Reduces an array to a single value, the return vaue of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
-callback; // function passed as an argument to another function. Allows a function to invoke another function.
-document.querySelector('.class').textContent = 'text'; // DOM changing text in html, .value to change number type.
-Number(); // TO CHANGE TO A NUMBER VALUE IN DOM
+.date = new Date(); // CURRENT DATE
+.forEach(); // PERFOMRS A FUCNTION FOR EACH ELEMENT IN AN ARRAY
+.Map(); // PERFORMS  FUNCTION FOR EACH ELEMENT IN AN ARRAY, THEN STORES THE RETURNED VALUES IN A NEW ARRAY.
+.Filter(); // returns the elements of an array that meets a condition  specified in a function
+.reduce(); // Reduces an array to a single value, the return vaue of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
+.callback; // function passed as an argument to another function. Allows a function to invoke another function.
+.document.querySelector('.class').textContent = 'text'; // DOM changing text in html, .value to change number type.
+.Number(); // TO CHANGE TO A NUMBER VALUE IN DOM
+.find()//method returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undef is returned
 
 player1El.classList.toggle('player--active');//automatically toggles either on or off
 ////////////////////////////////////////// TERNARY OPERATOR
