@@ -203,31 +203,12 @@ while (dice !== 6) {
   if (dice === 6) console.log(`loop is about to end`);
 }
 //////////////////////////////////////////////////////////////////////////
-/////  LOOP EXCERCISE
-let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-let tips = [];
-let totals = [];
+/////// IN OPERATOR   -   The in operator returns true if the specified property is in the specified object or its prototype chain.
 
-const calcTip = function (bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-};
+const car = { make: 'Honda', model: 'Accord', year: 1998 };
 
-for (let i = 0; i < bills.length; i++) {
-  const tip = calcTip(bills[i]);
-  tips.push(tip);
-  totals.push(tip + bills[i]);
-}
-console.log(bills, tips, totals);
-
-const calcAverage = function (arr) {
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-  }
-  return sum / arr.length;
-};
-console.log(calcAverage(totals));
-
+console.log('make' in car);
+// expected output: true
 ///////////////////////////////////////////    generate number >= myMin and <= myMax
 (myMin, myMax) => {
   return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
@@ -301,8 +282,12 @@ function repeatStringNumTimes(str, num) {
 
 
 ///////////////////////////////////////////////
-//
+// IN OPERATOR   -   The in operator returns true if the specified property is in the specified object or its prototype chain.
 
+const car = { make: 'Honda', model: 'Accord', year: 1998 };
+
+console.log('make' in car);
+// expected output: true
 
 
 
