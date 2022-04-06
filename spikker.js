@@ -27,6 +27,16 @@ function getRandomNum(min, max) {
 .document.querySelector('.class').textContent = 'text'; // DOM changing text in html, .value to change number type.
 .Number(); // TO CHANGE TO A NUMBER VALUE IN DOM
 .find()//method returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undef is returned
+.charAt(index)  // char at the argument position
+.assign(target, ...sources) //merge 2 object into a new one
+
+
+
+
+
+
+
+
 
 player1El.classList.toggle('player--active');//automatically toggles either on or off
 ////////////////////////////////////////// TERNARY OPERATOR
