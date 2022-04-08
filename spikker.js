@@ -291,13 +291,21 @@ function repeatStringNumTimes(str, num) {
 
 
 ///////////////////////////////////////////////
-// IN OPERATOR   -   The in operator returns true if the specified property is in the specified object or its prototype chain.
+// IN OPERATOR   -   Return the provided string with the first letter of each word capitalized. rest of the word is in lower case.
 
-const car = { make: 'Honda', model: 'Accord', year: 1998 };
+function titleCase(str) {
+  let splitStr = str.split(" ");
+  let newArray = [];
 
-console.log('make' in car);
-// expected output: true
+  for ( let n in splitStr) {
+    newArray[n] = splitStr[n][0].toUpperCase() + splitStr[n].slice(1).toLowerCase();
+  }
+  return newArray.join(" ");
 
+}
+
+titleCase("I'm a little tea pot");
+///
 
 
 
