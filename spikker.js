@@ -305,7 +305,18 @@ function titleCase(str) {
 }
 
 titleCase("I'm a little tea pot");
-///
+//////////////////////////////////////////////////////////////////////////////////
+/// adding an array into another from a specific point
+function frankenSplice(arr1, arr2, n) {
+let newArray = arr2.slice();
+newArray.splice(n, 0, ...arr1)
+return newArray;
+
+
+};
+
+
+console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
 
 
 
