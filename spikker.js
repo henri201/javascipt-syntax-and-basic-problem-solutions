@@ -33,7 +33,10 @@ object.assign(target, ...sources) //merge 2 objects and return a new   ///  obje
 
 
 
-
+//DESTRUCTURING EXAMPLE
+const arr = [1, 2, 3];
+const [x, y, z] = arr;
+console.log(x, y, z)// 1, 2, 3
 
 
 
