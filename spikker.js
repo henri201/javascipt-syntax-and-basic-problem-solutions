@@ -30,7 +30,7 @@ function getRandomNum(min, max) {
 .charAt(index)  // char at the argument position
 object.assign(target, ...sources) //merge 2 objects and return a new   ///  object.assign({}, sources)  merges into new empty object
 
-
+array.sort((a,b) => a-b) // to sort any array from smaller number to larger, b-a to sort from larger to smaller.
 
 
 //DESTRUCTURING EXAMPLE
