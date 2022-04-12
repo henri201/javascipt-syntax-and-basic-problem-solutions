@@ -322,5 +322,12 @@ return newArray;
 console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
 
 
+//////////////////////////////////////////////////////////////////////////////////////
+//  arranging an array and returning the index where the num fits
+
+function getIndexToIns(arr, num) {
+  return arr.filter(val => num > val).length;
+}
+
 
 
