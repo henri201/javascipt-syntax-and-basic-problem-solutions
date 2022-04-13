@@ -328,6 +328,12 @@ console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
 function getIndexToIns(arr, num) {
   return arr.filter(val => num > val).length;
 }
-
+-----
+function getIndexToIns(arr, num) {
+  return arr
+    .concat(num)
+    .sort((a, b) => a - b)
+    .indexOf(num);
+}
 
 
