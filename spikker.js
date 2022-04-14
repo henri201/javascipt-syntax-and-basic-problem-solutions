@@ -1,3 +1,12 @@
+Basic command line -
+  cmd - open command prompt
+  cd - current location
+  dir - to see all the files
+  cd fileName - to enter a specific file
+  cls- clean cmd
+  cd ..- go up
+  
+  
 spikker.js;
 "USE STRICT MODE"
 #message // to choose id
