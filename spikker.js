@@ -345,7 +345,7 @@ function getIndexToIns(arr, num) {
     .indexOf(num);
 }
 
-----------------
+///////////////////////////////    TURNING SINGLE ARRAY INTO 2 TIMENSIONAL
 
 function chunkArrayInGroups(arr, size) {
   let newArr = [];
