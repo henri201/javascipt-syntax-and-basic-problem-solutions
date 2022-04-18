@@ -345,7 +345,18 @@ function getIndexToIns(arr, num) {
     .indexOf(num);
 }
 
-///////////////////////////////    TURNING SINGLE ARRAY INTO 2 TIMENSIONAL
+///////////////////////////////    TURNING SINGLE ARRAY INTO 2 TIMENSIONAL with for loop
+
+function chunkArrayInGroups(arr, size) {
+  let newArray = [];
+  for (let i = 0; i < arr.length; i+= size) {
+    newArray.push(arr.slice(i, i + size));
+  }
+return newArray;
+}
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+
+//-------------- WITH WHILE
 
 function chunkArrayInGroups(arr, size) {
   let newArr = [];
@@ -354,3 +365,4 @@ function chunkArrayInGroups(arr, size) {
   }
   return newArr;
 }
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
