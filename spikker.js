@@ -46,6 +46,13 @@ array.sort((a,b) => a-b) // to sort any array from smaller number to larger, b-a
 const arr = [1, 2, 3];
 const [x, y, z] = arr;
 console.log(x, y, z)// 1, 2, 3
+/////////////////////////////FUNCTION CONSTRUCTOR
+function Dog() {
+  this.name = "br";
+  this.color = "green";
+  this.numLegs = 4;
+}
+// Constructors are functions that create new objects. They define properties and behaviors that will belong to the new object. 
 
 
 
