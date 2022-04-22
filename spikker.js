@@ -53,6 +53,7 @@ function Dog() {
   this.numLegs = 4;
 }
 // Constructors are functions that create new objects. They define properties and behaviors that will belong to the new object. 
+let hound = new Dog();  // Creates hound object with Dog properties.
 
 
 
