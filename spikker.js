@@ -68,6 +68,23 @@ let glideMixin = (obj) => {
 };
 glideMixin(bird);
 glideMixin(boat); // give unrelated objects same function. --------- MIXIN EXAMPLE
+------------------------------------
+let funModule =(()=> {
+return {
+ isCuteMixin : function(obj) {
+  obj.isCute = function() {
+    return true;
+  };
+},
+  singMixin : function(obj) {
+  obj.sing = function() {
+    console.log("Singing to an awesome tune");
+  };
+}}})();                   // creating a mixin module to keep all mixins
+                                               
+funModule.isCuteMixin(duck);
+duck.iscute();            // Taking a property from a mixin module
+                                               
 
 
 player1El.classList.toggle('player--active');//automatically toggles either on or off
