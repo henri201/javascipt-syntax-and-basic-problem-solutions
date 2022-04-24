@@ -57,7 +57,17 @@ let hound = new Dog();  // Creates hound object with Dog properties.
 Dog.prototype.numLegs = 2; // add a new property
 beagle.hasOwnProperty(property) // to check ownproperty prototypeProps // to check prototypeprops
 Object.prototype.isPrototypeOf(Bird.prototype); //Object is a supertype for all objects in JavaScript.
+Dog.prototype = Object.create(Animal.prototype); // instances of dog inherit from Animal
+Bird.prototype.constructor = Bird; // reset so that all instances of bird will be constructed by bird not Animal
+ChildObject.prototype.methodName = function() {...} // to set new unique function to childobject that was created from a parent
 
+let glideMixin = (obj) => {
+  obj.glide = () => {
+    console.log('glide around');
+  }
+};
+glideMixin(bird);
+glideMixin(boat); // give unrelated objects same function. --------- MIXIN EXAMPLE
 
 
 player1El.classList.toggle('player--active');//automatically toggles either on or off
