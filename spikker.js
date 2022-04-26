@@ -52,7 +52,8 @@ function Dog() {
   this.color = "green";
   this.numLegs = 4;
 }
-// Constructors are functions that create new objects. They define properties and behaviors that will belong to the new object. 
+// Constructors are functions that create new objects. They define properties and behaviors that will belong to the new object.
+splice(start, deleteCount, item1 /*adds the item into the array*/ ) // splice syntax
 let hound = new Dog();  // Creates hound object with Dog properties.
 Dog.prototype.numLegs = 2; // add a new property
 beagle.hasOwnProperty(property) // to check ownproperty prototypeProps // to check prototypeprops
@@ -86,18 +87,14 @@ funModule.isCuteMixin(duck);
 duck.iscute();            // Taking a property from a mixin module
                                                
 
+                                               
+                                               
+----------------------------------------------------------------------------------------------------------------------------------------------------
+____________________________________________________________________________________________________________________________________________________
 
+                                               
 player1El.classList.toggle('player--active');//automatically toggles either on or off
 ////////////////////////////////////////// TERNARY OPERATOR
-
-const bill = 275;
-const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-
-console.log(
-  `The total bill was ${bill}, the tip was ${tip}, and the total value ${
-    bill + tip
-  }`
-);
 
 function findGreaterOrEqual(a, b) {
   return a === b
@@ -134,18 +131,7 @@ const sum = (...args) => {
 };
 ////////////SUM TAKES IN ANY NUMBER OF ARGUMENTS AND RETURNS THEIR SUM
 
-///////////////////////////////////////////////////////////
 
-function checkScope() {
-  let i = "function scope";
-  if (true) {
-    let i = "block scope";
-    console.log("Block scope i is: ", i);
-  }
-  console.log("Function scope i is: ", i);
-  return i;
-}
-///////////////////////////////////////////////////////////
 ////////////      ES6 DESTRUCTURING
 
 const user = { name: "John Doe", age: 34 };
@@ -187,16 +173,6 @@ function checkAge(age) {
 }
 let adultStudents = students.filter(checkAge); // adds over 18 students to a new array. MAP brings all , filter only specified by the function.
 /////////////////////////////////////////////////////////////////////
-///////////////////Callback function
-
-let message;
-
-function displayConsole(output) {
-  console.log(output);
-}
-function displayDOM(output) {
-  document.getElementById("myH1").innerHTML = output;
-}
 
 /////////////////////////////////////////////////////////////
 /*Use template literal syntax with backticks to create an array of list element (li) strings. Each list element's text should be one of the array elements from the failure property on the result object and have a class attribute with the value text-warning. The makeList function should return the array of list item strings.
