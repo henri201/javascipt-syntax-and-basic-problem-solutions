@@ -36,6 +36,20 @@ const map1 = array1.map(x => x * 2);
 console.log(map1);
 // expected output: Array [2, 8, 18, 32]
 
+const watchList = [
+  {"Title": "Inception",
+    "imdbRating": "8.8"},
+  {"Title": "Interstellar",
+   "Metascore": "74"
+  }];
+
+const ratings = watchList.map(item => ({
+title: item["Title"],
+rating: item["imdbRating"]
+}));  
+//output [{"title":"Inception","rating":"8.8"},{"title":"Interstellar","rating":"8.6"}];
+
+
 .Filter(); // returns the elements of an array that meets a condition  specified in a function// array.filter(Boolean) = filters out non booleans from an array
 .reduce(); // Reduces an array to a single value, the return vaue of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 .callback; // function passed as an argument to another function. Allows a function to invoke another function.
