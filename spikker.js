@@ -24,6 +24,9 @@ Math.ceil(3.1); /// ROUNDS UP
 Math.random(); // 0 - 1
 Math.floor(Math.random() * 6); // 0 - 5
 Math.floor(Math.random() * 6) + 1; //1 - 6
+console.log(parseFloat(number)); // to change float value string into a number
+
+
 function getRandomNum(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min); // finds random number between min max
 }
