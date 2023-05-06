@@ -64,6 +64,11 @@ object.assign(target, ...sources) //merge 2 objects and return a new   ///  obje
 
 array.sort((a,b) => a-b) // to sort any array from smaller number to larger, b-a to sort from larger to smaller.
 
+///////////////////////////////DOM
+productNmaeInputElement.addEventListener('input', updateRemainingCharacters);  //running a function when an event happens
+
+
+
 
 //DESTRUCTURING EXAMPLE
 const arr = [1, 2, 3];
