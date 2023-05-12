@@ -66,6 +66,7 @@ array.sort((a,b) => a-b) // to sort any array from smaller number to larger, b-a
 
 ///////////////////////////////DOM
 productNmaeInputElement.addEventListener('input', updateRemainingCharacters);  //running a function when an event happens
+button2.addEventListener('click', (event)=> console.dir(event.target)); //writing the function inside
 
 
 
