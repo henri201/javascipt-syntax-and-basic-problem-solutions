@@ -27,6 +27,15 @@ Math.floor(Math.random() * 6) + 1; //1 - 6
 console.log(parseFloat(number)); // to change float value string into a number
 
 
+//////////////////////////////////////////////////////////////// for of loop
+const users = ['mary', 'henri', 'joel']
+for (const user of users){console.log(user)//prints every element in array} //loops through all the elements in users
+///////////////////////////////////////////////////////////////for in loop
+const loggedInUser object 
+for (const key in loggedInUser){prints out all the key valus in loggedInUser}
+loggedInUser[key]   - goes through all the key values
+                          
+                          
 function getRandomNum(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min); // finds random number between min max
 }
