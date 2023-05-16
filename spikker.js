@@ -34,8 +34,19 @@ for (const user of users){console.log(user)//prints every element in array} //lo
 const loggedInUser object 
 for (const key in loggedInUser){prints out all the key valus in loggedInUser}
 loggedInUser[key]   - goes through all the key values
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function higLightLinks() {
+    const anchorElements = document.querySelectorAll('#highlight-links a');
+
+    for (const anchorElement of anchorElements){
+        anchorElement.classList.add('highlight');
+    }
+}              //ACCESSING ALL A ELEMENT AND ADDING A CSS CLASS TO THEM
                           
                           
+                          
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 function getRandomNum(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min); // finds random number between min max
 }
