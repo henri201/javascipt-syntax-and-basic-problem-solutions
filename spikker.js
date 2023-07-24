@@ -442,3 +442,15 @@ function readFile() {
 }
 
 readFile();
+
+////////////////////////////////////////////////////////// CLASS
+class Job {
+   constructor(jobTitle, place, salary) {
+      this.title = 'developer';
+      this.location = place;
+      this.salary = salary;
+   }
+}
+
+const developer = new Job('developer', 'new york', 50000);
+console.log(developer)
