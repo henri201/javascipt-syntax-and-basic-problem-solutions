@@ -429,3 +429,16 @@ function chunkArrayInGroups(arr, size) {
   return newArr;
 }
 chunkArrayInGroups(["a", "b", "c", "d"], 2);
+
+ /////////////////////////////////////////////////////////// try catch
+const fs = require('fs');
+function readFile() {
+   try {
+      const fileData = fs.readFileSync('data.json');
+   } catch {
+      console.log('an error has occured');
+   }
+   console.log('hi there');
+}
+
+readFile();
