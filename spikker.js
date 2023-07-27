@@ -457,3 +457,9 @@ class Job {
 
 const developer = new Job('developer', 'new york', 50000);
 developer.describe()
+//////////////////////////////////////////////////////////////// async/await
+
+async function readFile(){      //automatically returns a promise
+  fileData = await fs.readFile('data,txt');   //waits till finished, and then continues with other lines
+  console.log('file parsing done')
+}
